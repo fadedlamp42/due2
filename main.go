@@ -52,7 +52,6 @@ func main() {
 
 		// parse
 		dueDate, err := time.Parse("01/02", tokens[1])
-		fmt.Printf("DEBUG: tokens[1]=%s\n", tokens[1])
 
 		if err != nil {
 			fmt.Printf("WARNING: couldn't parse %s as a date\n", tokens[1])
