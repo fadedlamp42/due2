@@ -69,7 +69,7 @@ func main() {
 		}
 
 		// calculate result and print
-		daysUntil := dueDate.YearDay() - time.Now().YearDay() // this totally breaks if years don't match but semesters never span years
+		daysUntil := dueDate.YearDay() - time.Now().YearDay() - 1 // this totally breaks if years don't match but semesters never span years
 		if daysUntil > int(lookAhead) {
 			continue
 		}
